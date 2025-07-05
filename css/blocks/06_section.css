@@ -1,0 +1,159 @@
+/* css/blocks/feedback.css */
+
+.feedback_wrapper {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+    color: var(--background_dark);
+}
+
+.feedback_container{
+    max-width: 1396px;
+}
+
+/* --- ЗАГОЛОВОК СЕКЦИИ --- */
+.feedback_header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+.feedback_header_subtitle {
+    color: var(--text_dark);
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+/* --- СЕТКА --- */
+.feedback_grid {
+    display: flex;
+    flex-direction: column; /* На мобильных: карточки в столбик */
+    gap: 20px;
+}
+
+/* --- КАРТОЧКА --- */
+.feedback_card {
+    border-radius: 30px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    min-height: 285px;
+    max-width: 688px;
+}
+
+.feedback_card_quote_icon {
+    position: absolute;
+    top: 0px;
+    right: 24px;
+}
+
+.feedback_card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.feedback_card_title {
+    font-size: 30px;
+    font-family: 'Hemenix-Bold', sans-serif;
+}
+
+.feedback_card_text {
+    font-size: 22px;
+    line-height: 120%;
+    max-width: 518px;
+    font-family: 'Hemenix-Regular-Italic', sans-serif;
+}
+
+/* --- ФУТЕР КАРТОЧКИ --- */
+.feedback_card_footer {
+    display: flex;
+    flex-direction: column; /* На мобильных располагаем автора и кнопку друг под другом */
+    align-items: flex-start;
+    gap: 20px;
+}
+.feedback_card_author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.feedback_card_author_name {
+    font-family: 'Hemenix-Bold', serif;
+    font-size: 16px;
+}
+.feedback_card_author_title {
+    font-size: 14px;
+}
+
+.feedback_card_button {
+    display: flex;
+    align-items: center;
+    max-width: 191px;
+    gap: 35px;
+    padding: 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-family: 'Hemenix-Medium', sans-serif;
+    font-size: 19px;
+}
+.feedback_card_button p {
+    margin: 0;
+}
+.feedback_card_button img {
+}
+
+/* --- МОДИФИКАТОРЫ СТИЛЕЙ --- */
+.feedback_card.card--dark {
+    background-color: var(--background_dark);
+    color: var(--white);
+}
+.feedback_card.card--dark .feedback_card_text,
+.feedback_card.card--dark .feedback_card_author_title {
+    color: var(--text_grey);
+}
+
+.feedback_card.card--dark .feedback_card_button {
+    background-color: var(--primary_color);
+    color: var(--text_light);
+}
+
+.feedback_card.card--light {
+    background-color: #FDF5E9;
+    color: var(--background_dark);
+}
+.feedback_card.card--light .feedback_card_text,
+.feedback_card.card--light .feedback_card_author_title {
+    color: var(--text_dark);
+}
+
+.feedback_card.card--light .feedback_card_button {
+    background-color: rgba(255, 153, 0, 0.15); /* Прозрачный оранжевый */
+    color: var(--primary_color);
+}
+
+@media (min-width: 768px) {
+    .feedback_header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /*margin-bottom: 60px;*/
+    }
+    .feedback_header_subtitle {
+        max-width: 690px;
+        text-align: left;
+    }
+
+    .feedback_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feedback_card_footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

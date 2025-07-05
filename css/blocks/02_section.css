@@ -1,0 +1,303 @@
+/*.hero_wrapper {*/
+/*    width: 100%;*/
+/*    background-color: var(--background_dark);*/
+/*    background-image: url('../../assets/images/bg1.svg');*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-size: cover;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.logo {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.logo_icon {*/
+/*    margin-right: 10px;*/
+/*}*/
+
+/*.logo_text {*/
+/*    color: var(--text_light);*/
+/*    font-size: 22px;*/
+/*    font-weight: 700;*/
+/*}*/
+
+/*.header_nav_list {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 50px;*/
+/*    list-style-type: none;*/
+/*}*/
+
+/*.header_nav_link {*/
+/*    text-decoration: none;*/
+/*    color: var(--text_grey, #EBEBF599);*/
+/*    font-size: 20px;*/
+/*    font-weight: 400;*/
+/*    transition: color 0.3s ease;*/
+/*}*/
+
+/*.header_nav_link:hover {*/
+/*    color: var(--primary_color);*/
+/*}*/
+
+/*.header_nav_link p {*/
+/*    margin: 0;*/
+/*}*/
+
+/*.hero_container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.hero_header {*/
+/*    display: flex;*/
+/*    background-color: var(--background_dark);*/
+/*    padding: 10px 40px;*/
+/*    border-radius: 50px;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.header_nav {*/
+/*    display: none;*/
+/*}*/
+
+/*.hero_main_content {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.hero_column_left {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.hero_text_content {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.text_heading_1 {*/
+/*    font-size: 42px;*/
+/*    font-weight: 900;*/
+/*    line-height: 110%;*/
+/*    max-width: 670px;*/
+/*}*/
+
+/*.text_primary {*/
+/*    color: var(--primary_color);*/
+/*}*/
+
+/*.hero_subtitle {*/
+/*    color: var(--text_grey);*/
+/*    font-size: 18px;*/
+/*    line-height: 1.5;*/
+/*}*/
+
+/*.hero_customers {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    position: relative;*/
+/*}*/
+
+/*.customer_photos {*/
+/*    display: flex;*/
+/*}*/
+
+/*.customer_photos img {*/
+/*    filter: grayscale(100%);*/
+/*}*/
+
+/*.customer_photos img:not(:first-child) {*/
+/*    margin-left: -40px;*/
+/*}*/
+
+/*.customer_info {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.text_label {*/
+/*    font-size: 22px;*/
+/*    letter-spacing: 1.5px;*/
+/*    color: var(--text_light);*/
+/*}*/
+
+/*.play_button img {*/
+/*    position: absolute;*/
+/*    bottom: 70px;*/
+/*    left: 110px;*/
+/*}*/
+
+/*.hero_column_right {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 40px;*/
+/*}*/
+
+/*.hero_cards_container {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    gap: 20px;*/
+/*}*/
+
+/*.info_card {*/
+/*    text-decoration: none;*/
+/*    border-radius: 30px;*/
+/*    padding: 20px;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-between;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+/*.info_card:hover {*/
+/*    transform: translateY(-5px);*/
+/*}*/
+
+/*.card_top {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: flex-start;*/
+/*}*/
+
+/*.info_card_text {*/
+/*    font-size: 30px;*/
+/*    font-weight: 900;*/
+/*}*/
+
+/*.card_articles,*/
+/*.card_gallery {*/
+/*    background-color: #FDF5E9;*/
+/*    color: var(--background_dark);*/
+/*}*/
+
+/*.card_popular {*/
+/*    background-color: var(--background_dark);*/
+/*    color: var(--text_light);*/
+/*    min-height: 180px;*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.users_badge {*/
+/*    position: absolute;*/
+/*    top: -90px;*/
+/*    right: 220px;*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    border-radius: 50%;*/
+/*    border: 12px solid var(--primary_color);*/
+/*    background-color: var(--background_dark);*/
+/*    font-weight: 900;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    font-size: 30px;*/
+/*    line-height: 110%;*/
+/*    transform: rotate(15deg);*/
+/*    color: white;*/
+/*}*/
+
+/*.hero_actions {*/
+/*    display: flex;*/
+/*    gap: 20px;*/
+/*}*/
+
+/*.button {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    text-decoration: none;*/
+/*    justify-content: center;*/
+/*    width: 227px;*/
+/*    height: 59px;*/
+/*    border-radius: 12px;*/
+/*    font-size: 26px;*/
+/*    font-weight: 500;*/
+/*    text-align: center;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*.button_primary {*/
+/*    background-color: var(--border_color);*/
+/*    color: var(--text_light);*/
+/*}*/
+
+/*.button_secondary {*/
+/*    background-color: transparent;*/
+/*    color: var(--text_light);*/
+/*    border: 1px solid var(--border_color);*/
+/*}*/
+
+/*.button:hover {*/
+/*    opacity: 0.85;*/
+/*}*/
+
+/*@media (min-width: 1024px) {*/
+/*    .hero_wrapper {*/
+/*        padding: 0 0 40px 0;*/
+/*    }*/
+/*    .hero_header {*/
+/*        padding: 10px 40px;*/
+/*        margin: 0;*/
+/*    }*/
+/*    .header_nav {*/
+/*        display: block;*/
+/*    }*/
+/*    .header_nav_list {*/
+/*        gap: 50px;*/
+/*    }*/
+/*    .header_nav_link {*/
+/*        font-size: 20px;*/
+/*    }*/
+/*    .hero_main_content {*/
+/*        flex-direction: row;*/
+/*        justify-content: space-between;*/
+/*        align-items: flex-start;*/
+/*    }*/
+/*    .text_heading_1 {*/
+/*        font-size: 64px;*/
+/*    }*/
+/*    .hero_subtitle {*/
+/*        font-size: 22px;*/
+/*        max-width: 460px;*/
+/*    }*/
+/*    .hero_cards_container {*/
+/*        position: relative;*/
+/*        width: 100%;*/
+/*        height: 350px;*/
+/*        align-items: flex-start;*/
+/*    }*/
+/*    .info_card {*/
+/*        position: absolute;*/
+/*    }*/
+/*    .card_articles {*/
+/*        top: 80px;*/
+/*        width: 160px;*/
+/*        height: 165px;*/
+/*        left: -500px;*/
+/*    }*/
+/*    .card_gallery {*/
+/*        width: 160px;*/
+/*        height: 165px;*/
+/*        top: 200px;*/
+/*        left: -260px;*/
+/*    }*/
+/*    .card_popular {*/
+/*        width: 437px;*/
+/*        height: 145px;*/
+/*        top: 340px;*/
+/*        left: -20px;*/
+/*    }*/
+/*    .hero_actions {*/
+/*        margin-top: 295px;*/
+/*    }*/
+/*}*/

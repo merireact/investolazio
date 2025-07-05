@@ -1,0 +1,117 @@
+.popular_wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    max-width: 1684px;
+}
+
+.popular_header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.popular_header_subtitle {
+    font-size: 24px;
+    color: var(--text_dark);
+    line-height: 36px;
+}
+
+.popular_cards_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.popular_card {
+    border-radius: 30px;
+    padding: 20px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+    max-width: 548px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popular_card.card--light {
+    background-color: var(--text_light);
+    color: var(--text_dark);
+}
+
+
+
+.popular_card.card--dark {
+    background-color: #3A3A3C;
+    color: var(--white);
+}
+
+.popular_card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 13px;
+}
+
+.popular_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.popular_card_title {
+    font-size: 30px;
+    font-family: 'Hemenix-Medium', sans-serif;
+    margin-top: 13px;
+
+}
+
+.popular_card_description {
+    font-size: 24px;
+    line-height: 1.4;
+    font-family: 'Hemenix-Light', sans-serif;
+}
+
+.popular_card_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+
+
+@media (min-width: 1024px) {
+    .popular_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .popular_header_title {
+        font-size: 64px;
+        color: var(--text_dark);
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .popular_header_subtitle {
+        max-width: 690px;
+        text-align: left;
+        margin: 0 ;
+    }
+
+    .popular_cards_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 40px;
+    }
+}
