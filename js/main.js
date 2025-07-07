@@ -10,13 +10,24 @@ const blocks = [
     '08_section',
     '09_section',
     '10_section',
+    '11_section',
+    '12_section',
+    '13_section',
+    '14_section',
+    '15_section',
+    '16_section',
+    '17_section',
+    '18_section',
+    '19_section',
+    'header',
+    'footer',
 ];
 
 async function loadBlock(blockName) {
     const placeholder = document.getElementById(`block_${blockName}`);
 
     if (!placeholder) {
-        console.error(`Ошибка: Не найден div-слот с ID "block_${blockName}" в index.html`);
+        console.error(`Ошибка: Не найден div-слот с ID "block_${blockName}"`);
         return;
     }
 
@@ -31,7 +42,7 @@ async function loadBlock(blockName) {
         }
     } catch (error) {
         console.error(`Ошибка при загрузке блока "${blockName}":`, error);
-        placeholder.innerHTML = `<p style="color: red; text-align: center; padding: 20px;">Не удалось загрузить блок: ${blockName}.html</p>`;
+        placeholder.innerHTML = `<p style="color: red;">Не удалось загрузить блок: ${blockName}.html</p>`;
     }
 }
 

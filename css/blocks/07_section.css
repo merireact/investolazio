@@ -1,10 +1,7 @@
-/* css/blocks/contact_form.css */
-
 .form_wrapper {
-    padding: 80px 0;
-    /* Устанавливаем фон, как вы просили */
-    background-image: url('../assets/images/bg2.svg');
-    background-color: #F3F3F3; /* Светло-серый фон */
+    padding: 40px 0 60px 0;
+    background-image: url('../../assets/images/bg2.svg');
+    background-color: #F3F3F3;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,7 +11,7 @@
 .form_container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Центрируем все содержимое */
+    align-items: center;
     gap: 40px;
 }
 
@@ -22,10 +19,8 @@
     text-align: center;
 }
 
-/* --- ТЕЛО ФОРМЫ --- */
 .form_body {
     width: 100%;
-    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,83 +31,88 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    font-family: 'Hemenix-Bold';
-    font-size: 20px;
+    font-family: 'Hemenix-Black', sans-serif;
+    font-size: 22px;
 }
+
 .form_logo img {
-    width: 28px;
-    height: 28px;
-    /* Окрашиваем логотип в оранжевый */
-    filter: invert(65%) sepia(83%) saturate(1450%) hue-rotate(359deg) brightness(100%) contrast(102%);
+    filter: invert(51%) sepia(26%) saturate(2463%) hue-rotate(311deg) brightness(100%) contrast(97%);
 }
+
 
 .form_main {
     width: 100%;
+    max-width: 608px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 10px;
 }
 
-/* --- ПОЛЯ ВВОДА --- */
 .form_input_wrapper {
     position: relative;
     display: flex;
     align-items: center;
     background-color: #FFFFFF;
-    border-radius: 16px;
-    padding: 12px 20px;
-    border: 1px solid #E5E5EA;
+    border-radius: 10px;
+    padding: 20px 20px;
 }
+
 .form_label {
-    font-family: 'Hemenix-Medium';
-    color: #8A8A8E;
+    font-size: 22px;
+    color: var(--text_second);
     margin-right: 8px;
 }
+
 .form_input {
     border: none;
     outline: none;
     background: none;
     width: 100%;
-    font-family: 'Hemenix-Regular';
+    font-family: 'Hemenix-Regular', sans-serif;
     font-size: 18px;
     color: var(--background_dark);
 }
+
 .form_input::placeholder {
-    color: #C7C7CC;
+    color: #ACACAC;
 }
+
 .form_phone_prefix {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    font-size: 22px;
+    color: var(--text_second);
     padding-right: 12px;
     margin-right: 12px;
     border-right: 1px solid #E5E5EA;
-    font-family: 'Hemenix-Medium';
-    color: var(--background_dark);
+    font-family: 'Hemenix-Medium', sans-serif;
 }
+
 .form_phone_prefix img {
     width: 28px;
 }
 
-/* --- СОГЛАШЕНИЕ И ЧЕКБОКС --- */
 .form_agreement {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
 .form_agreement_text {
     font-size: 14px;
     color: #8A8A8E;
 }
+
 .form_privacy_link {
     color: var(--primary_color);
     text-decoration: underline;
 }
 
-/* Кастомный чекбокс */
 .form_checkbox_input {
-    display: none; /* Скрываем стандартный чекбокс */
+    display: none;
 }
+
 .form_checkbox_label {
     width: 20px;
     height: 20px;
@@ -122,36 +122,36 @@
     display: inline-block;
     position: relative;
 }
-/* Галочка появляется, когда чекбокс выбран */
+
 .form_checkbox_input:checked + .form_checkbox_label {
     background-color: var(--primary_color);
     border-color: var(--primary_color);
 }
+
 .form_checkbox_input:checked + .form_checkbox_label::after {
-    content: '';
     position: absolute;
     left: 6px;
     top: 2px;
     width: 5px;
     height: 10px;
     border: solid white;
-    border-width: 0 3px 3px 0;
+    padding: 4px;
     transform: rotate(45deg);
 }
 
-/* --- КНОПКА ОТПРАВКИ --- */
 .form_submit_button {
     width: 100%;
-    padding: 18px;
+    padding: 25px;
     border-radius: 16px;
     border: none;
-    background-color: var(--primary_color);
+    background-color: var(--border_color);
     color: var(--text_light);
-    font-family: 'Hemenix-Bold';
-    font-size: 18px;
+    font-family: 'Hemenix-Medium', sans-serif;
+    font-size: 28px;
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
+
 .form_submit_button:hover {
     opacity: 0.9;
 }

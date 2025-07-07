@@ -3,9 +3,26 @@
 @import url('_global.css');
 
 @import url('blocks/01_section.css');
+@import url('blocks/02_section.css');
 @import url('blocks/03_section.css');
 @import url('blocks/04_section.css');
 @import url('blocks/05_section.css');
 @import url('blocks/06_section.css');
 @import url('blocks/07_section.css');
-/*@import url('blocks/08_section.css');*/
+@import url('blocks/08_section.css');
+@import url('blocks/09_section.css');
+@import url('blocks/10_section.css');
+@import url('blocks/11_section.css');
+@import url('blocks/12_section.css');
+@import url('blocks/13_section.css');
+@import url('blocks/14_section.css');
+@import url('blocks/15_section.css');
+@import url('blocks/16_section.css');
+@import url('blocks/17_section.css');
+
+@import url('blocks/header.css');
+@import url('blocks/footer.css');
+@import url('blocks/cookie_popup.css');
+
+
+

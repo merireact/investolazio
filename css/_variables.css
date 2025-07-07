@@ -1,13 +1,22 @@
 :root {
-    --primary_color: #FE6813;
+    --primary_color: #E76395;
     --background_dark: #2A2A2A;
     --text_light: #F4EBDC;
+    --text_middle: #3C3D3F;
     --text_dark: #2F2F2F;
     --text_grey: #A9A49B;
+    --text_second: #6F6E6E;
+    --text_grey_secondary: #D4D4D4 ;
     --white: #FFFFFF;
+    --background_light: #A5A097 ;
+    --background_card: #FAF7F1;
+    --text_dark_rgb: 47, 47, 47;
+    --text_grey-rgb: 176, 176, 176;
 
 
-    --border_color: #FF7A01;
+    --border_color: #E76395;
+    --orange: #e781c4
+
 
 
 }

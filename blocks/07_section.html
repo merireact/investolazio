@@ -2,35 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contact Form</title>
 </head>
 <body>
-<!-- blocks/06_contact_form.html -->
 <section class="form_wrapper">
     <div class="container form_container">
-
         <p class="text_heading_2 form_title">
-            Leave your <span class="text_primary">contacts,</span>
-            <br>
+            Leave your <span class="text_primary">contacts,</span><br>
             our managers will <span class="text_primary">contact you</span>
         </p>
-
-        <!-- Обертка для всей формы -->
         <div class="form_body">
-
             <div class="form_logo">
                 <img src="assets/icons/logo_icon.svg" alt="logo icon">
                 <p>Investolazio</p>
             </div>
-
             <form action="#" method="POST" class="form_main">
-                <!-- Поле для имени -->
                 <div class="form_input_wrapper">
                     <label for="name" class="form_label">Name:</label>
                     <input type="text" id="name" name="name" class="form_input">
                 </div>
-
-                <!-- Поле для телефона -->
                 <div class="form_input_wrapper">
                     <div class="form_phone_prefix">
                         <img src="assets/icons/flag_usa.svg" alt="USA flag">
@@ -38,8 +28,6 @@
                     </div>
                     <input type="tel" id="phone" name="phone" class="form_input" placeholder="000 000 00 00">
                 </div>
-
-                <!-- Чекбокс с политикой конфиденциальности -->
                 <div class="form_agreement">
                     <input type="checkbox" id="agreement" name="agreement" class="form_checkbox_input">
                     <label for="agreement" class="form_checkbox_label"></label>
@@ -48,13 +36,8 @@
                         <a href="#" class="form_privacy_link">privacy policy</a>
                     </p>
                 </div>
-
-                <!-- Кнопка отправки -->
-                <button type="submit" class="form_submit_button">
-                    Send request
-                </button>
+                <button type="submit" class="form_submit_button">Send request</button>
             </form>
-
         </div>
     </div>
 </section>

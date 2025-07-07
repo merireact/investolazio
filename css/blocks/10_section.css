@@ -1,0 +1,127 @@
+.articles_wrapper {
+    background-image: url('../../assets/images/bg4mobile.svg');
+    background-size: cover;
+    background-position: center;
+   }
+
+
+.articles_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.articles_header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 40px;
+}
+.articles_title {
+    color: var(--white);
+}
+.articles_subtitle {
+
+    color: #3A3A3C;
+}
+
+.articles_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.articles_card {
+    background-color: var(--text_light);
+    border-radius: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--background_dark);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 417px;
+}
+.articles_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.articles_card_image_wrapper {
+}
+.articles_card_image_wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.articles_card_content {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.articles_card_title {
+    font-family: 'Hemenix-Semibold' , sans-serif;
+    font-size: 26px;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.articles_card_arrow {
+    /*filter: invert(65%) sepia(83%) saturate(1450%) hue-rotate(359deg) brightness(100%) contrast(102%);*/
+    flex-shrink: 0;
+}
+
+.articles_footer {
+    text-align: center;
+    display: none;
+}
+.articles_button {
+    display: inline-block;
+    padding: 20px ;
+    border-radius: 10px;
+    background-color: var(--border_color);
+    color: var(--text_light);
+    text-decoration: none;
+    font-family: 'Hemenix-Bold' , sans-serif;
+    font-size: 28px;
+    transition: opacity 0.3s ease;
+    width: 547px;
+}
+.articles_button:hover {
+    opacity: 0.9;
+}
+
+@media (min-width: 1024px) {
+    .articles_wrapper {
+        padding: 40px 0;
+        background-image: url('../../assets/images/bg4.svg');
+
+
+    }
+    .articles_header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .articles_subtitle {
+        max-width: 690px;
+        text-align: right;
+    }
+
+    .articles_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .articles_footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -8,7 +8,9 @@
 .popular_header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
+    margin-bottom: 30px;
 }
 
 .popular_header_subtitle {
@@ -85,7 +87,10 @@
     margin-top: 30px;
 }
 
+.popular_header_title {
+    color: var(--text_dark);
 
+}
 
 @media (min-width: 1024px) {
     .popular_header {
@@ -113,5 +118,16 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .popular_card_main_icon_wrapper{
+        display: none;
+    }
+
+    .popular_card{
+        min-height: 246px;
     }
 }

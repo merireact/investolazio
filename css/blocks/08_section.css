@@ -1,0 +1,138 @@
+.addresses_wrapper {
+    padding: 60px 0;
+    background-color: var(--background_dark);
+}
+
+.addresses_container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.addresses_title {
+    text-align: center;
+    color: var(--text_light);
+}
+
+.addresses_content_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.addresses_map_wrapper {
+    border-radius: 24px;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 855px;
+}
+
+.addresses_map_image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.addresses_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.addresses_card {
+    position: relative;
+    background-color: var(--background_light);
+    border-radius: 20px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.addresses_card_pin {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.addresses_card_info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: var(--background_dark);
+}
+
+.addresses_card_flag {
+    width: 32px;
+}
+
+.addresses_card_text_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.addresses_card_city {
+    font-family: 'Hemenix-Medium', sans-serif;
+    font-size: 30px;
+}
+
+.addresses_card_street {
+    font-size: 20px;
+    color: rgba(var(--text_dark_rgb), 0.8);
+}
+
+.addresses_card_badge {
+    background-color: rgba(231, 145, 212, 0.15);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.addresses_card_badge p {
+    margin: 0;
+    font-family: 'Hemenix-Medium', sans-serif;
+    font-size: 14px;
+    color: var(--primary_color);
+    white-space: nowrap;
+}
+
+.addresses_card.card--active {
+    background-color: var(--text_light);
+}
+
+.addresses_card.card--active .addresses_card_badge {
+    background-color: rgba(231, 145, 212, 0.15);
+}
+
+.addresses_card.card--active .addresses_card_badge p {
+    color: var(--primary_color);
+}
+
+.addresses_list_area {
+    margin-top: 24px;
+}
+
+@media (min-width: 1024px) {
+    .addresses_content_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+    .addresses_list {
+        gap: 74px;
+    }
+    .addresses_card {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 38px 24px;
+        max-width: none;
+    }
+}
