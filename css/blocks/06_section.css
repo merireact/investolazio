@@ -129,7 +129,7 @@
 }
 
 .feedback_card.card--light .feedback_card_button {
-    background-color: rgba(231, 145, 212, 0.15);
+    background-color: rgba(161, 231, 145, 0.15);
     color: var(--primary_color);
 }
 

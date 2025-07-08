@@ -65,6 +65,27 @@
     display: none;
 }
 
+.header_nav.is-open {
+    display: flex;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+
+    background-color: var(--text_light);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.header_nav.is-open .header_nav_list {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
 .header_burger_menu {
     display: block;
     background: none;
@@ -181,6 +202,24 @@
 }
 
 @media (min-width: 1024px) {
+    .header_nav {
+        display: flex;
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .header_nav.is-open {
+        display: flex;
+    }
+    .header_nav_list {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .header_burger_menu {
+        display: none;
+    }
     .hero_wrapper {
         padding: 0 0 40px 0;
     }

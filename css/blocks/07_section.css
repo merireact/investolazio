@@ -35,9 +35,10 @@
     font-size: 22px;
 }
 
-.form_logo img {
-    filter: invert(51%) sepia(26%) saturate(2463%) hue-rotate(311deg) brightness(100%) contrast(97%);
-}
+/*.form_logo img {*/
+/*    filter: invert(20%) sepia(90%) saturate(5000%) hue-rotate(345deg) brightness(85%) contrast(100%);*/
+/*}*/
+
 
 
 .form_main {
